@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Theme</RootNamespace>
     <AssemblyName>Theme</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,29 +36,41 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlRenderer">
+      <HintPath>..\..\..\..\..\..\Local\Playnite\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.WPF">
+      <HintPath>..\..\..\..\..\..\Local\Playnite\HtmlRenderer.WPF.dll</HintPath>
+    </Reference>
     <Reference Include="Playnite">
-      <HintPath>..\..\..\Playnite.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\Playnite.dll</HintPath>
+    </Reference>
+    <Reference Include="Playnite.Common">
+      <HintPath>..\..\..\..\..\..\Local\Playnite\Playnite.Common.dll</HintPath>
     </Reference>
     <Reference Include="Playnite.SDK">
-      <HintPath>..\..\..\Playnite.SDK.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\Playnite.SDK.dll</HintPath>
     </Reference>
     <Reference Include="Playnite.DesktopApp">
-      <HintPath>..\..\..\Playnite.DesktopApp.exe</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\Playnite.DesktopApp.exe</HintPath>
     </Reference>
     <Reference Include="HtmlRenderer">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\HtmlRenderer.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\HtmlRenderer.dll</HintPath>
     </Reference>
     <Reference Include="HtmlRenderer.WPF">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\HtmlRenderer.WPF.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\HtmlRenderer.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Playnite.SDK">
+      <HintPath>..\..\..\..\..\..\Local\Playnite\Playnite.SDK.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Interactivity">
-      <HintPath>..\..\..\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Local\Playnite\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -75,6 +88,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.config" />
+    <None Include="app.config" />
     <None Include="theme.yaml" />
     <None Include="thememodifier.yaml" />
   </ItemGroup>

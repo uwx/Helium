@@ -14,6 +14,7 @@
                         <Border BorderThickness="{Settings GridItemMargin}" BorderBrush="{DynamicResource GridItemBackgroundBrush}">
                             <StackPanel Name="PART_PanelHost"
                                     d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
+								<ContentControl x:Name="ThemeBannerHelper_GridBanner" MaxWidth="{Settings GridItemWidth}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
 
                                 <Grid Width="{Settings GridItemWidth}"
                                       Height="{Settings GridItemHeight}">

@@ -385,4 +385,7 @@
 
     <SolidColorBrush x:Key="GridViewCoverSubtitleBrush" Color="#b7b7b7" />
     <SolidColorBrush x:Key="GridViewCoverSubtitleBackgroundBrush" Color="#3d4450" />
+    
+    <!-- Maxine added -->
+    <HorizontalAlignment x:Key="TextBannerHorizontalAlignment">Center</HorizontalAlignment> <!-- Values: Left Center Right  -->
 </ResourceDictionary>
